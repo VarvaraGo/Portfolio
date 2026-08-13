@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Insight Flow: Conversational BI Platform — Varvara Gorelina</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<link rel="icon" type="image/png" href="images/fav.png">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a href="index.html" class="logo">Varvara Gorelina <img src="images/fav.png" alt="" class="logo-mark"></a>
+    <nav class="nav-links">
+      <a href="index.html">My works</a>
+      <a href="index.html#cv">My CV</a>
+      <a href="index.html#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<div class="case-layout">
+
+  <aside class="case-side">
+    <div class="case-meta-block">
+      <span class="eyebrow">2026</span>
+      <h1>Insight Flow: Conversational BI Platform</h1>
+    </div>
+
+    <h2>Target Audience</h2>
+    <p>Executives and managers at medium-sized companies (B2B SaaS)</p>
+
+    <h2>Problem</h2>
+    <p>Executives and managers constantly ask analysts questions such as: Why has revenue dropped? Which customers are churning? Why has revenue grown in Germany but not in France? Which marketing channels deliver the best ROI?</p>
+    <p>Preparing an answer involves:</p>
+    <ul>
+      <li>Finding the right dashboard</li>
+      <li>Filtering</li>
+      <li>SQL queries</li>
+      <li>Follow-up questions</li>
+    </ul>
+
+    <h2>Objective</h2>
+    <p>To create an AI interface that will allow business users to explore data on their own through dialogue</p>
+
+    <h2>My achievements</h2>
+    <ul>
+      <li>Identify the positioning and key features of the product</li>
+      <li>Design a usage flow and information architecture</li>
+      <li>Create a UI and prototype</li>
+      <li>User testing on synthetic personas</li>
+      <li>Design backlog management</li>
+    </ul>
+
+    <h2>Tools used</h2>
+    <ul>
+      <li>Claude Sonet 5</li>
+      <li>Figma Make</li>
+      <li>Chat GPT-5.5</li>
+    </ul>
+
+    <h2>Competitor Analysis</h2>
+    <p>Insight: The three competitors are solving different but partially overlapping tasks:<br>
+    • Power BI Copilot → access to data within the Microsoft ecosystem<br>
+    • Tableau Pulse → KPI monitoring and proactive alerts<br>
+    • ThoughtSpot → data search and self-exploration</p>
+    <p>None of them systematically solves the issue of trust: "Why should I believe this answer?" — the answers are given without layers of evidence, certainty, and connection to the decision.</p>
+
+    <h2>Positioning</h2>
+    <p>Conversational BI for Decision Confidence. It «Ask your data», а «Understand why the answer is true».</p>
+
+    <h3>Principle 1: Evidence-first AI</h3>
+    <p>Each response is accompanied by the data sources used, the metrics applied, the contribution of various factors, and visual confirmation—there's no need to search for evidence separately (unlike Power BI Copilot, where you have to trust the model's "black box")</p>
+
+    <h3>Principle 2: Confidence Layer</h3>
+    <p>Each response includes an explicit confidence level (High/Mid/Low), the number of datasets used, and the percentage of data completeness—something none of the three competitors explicitly provide.</p>
+
+    <h3>Principle 3: Decision Mode</h3>
+    <p>Instead of simply stating a fact ("sales fell by 12%"), the product structures its response as Problem → Cause → Impact → Recommended action—this is closer to a recommendation system for decision-making than to a dashboard or data search engine.</p>
+
+    <h3>The principle of nesting within the dialogue</h3>
+    <p>Each AI response has its own local architecture according to the trust layers of the concept</p>
+
+    <h2>Personas</h2>
+    <p>Each role has its own criteria of trust. The 5 levels embedded in the archetect serve the criteria of trust of each</p>
+
+    <h2>Response Architecture</h2>
+    <p>The answer is never displayed 'raw' — there's always an initial self-assessment</p>
+    <p>If a problem is found, the system first tries to fix it itself. Only if this does not help is the reason disclosed to the user. If there is a lack of data, it explains exactly what is incomplete and what risk this poses. If there is a technical error, it suggests waiting or receiving a notification. The product always explains why confidence is not 'High', rather than simply marking the answer with an icon</p>
+
+    <h2>Prototyping</h2>
+    <h3>ASK section</h3>
+    <p>New dialogue · Active dialogue · Evidence panels</p>
+    <p><strong>Scenario</strong><br>
+    Question → Answer → Evidence → Certainty → Action<br>
+    The user receives a response and immediately sees the specific dashboard containing the settings, the information from which was used to generate the response.</p>
+    <p><strong>Key feature</strong><br>
+    After generating a response, before displaying it to the user, the system automatically analyzes the response's accuracy. The self-assessment result is shown to the user along with the response.<br>
+    If the accuracy is average or low, the system attempts to correct the result. If it is impossible to generate a more accurate result:</p>
+    <p>Due to insufficient data, the system displays a self-assessment rating of "average" or "low" and explains the reason and associated risks.</p>
+    <p>Due to a technical failure, the system displays preliminary data and asks the user to make the request later or to request a notification when the source server is able to return a response.</p>
+
+    <h3>History</h3>
+    <ul>
+      <li>All Threads</li>
+      <li>Folders</li>
+      <li>Topics (auto-tags: Sales/Marketing/Finance)</li>
+      <li>Saved</li>
+      <li>Shared</li>
+    </ul>
+    <p>Organizing and reusing past investigations. The 'Saved' folder is the default option for opening the 'History'</p>
+
+    <h3>Data Sources</h3>
+    <ul>
+      <li>List of Connections and Status</li>
+      <li>Add a Source (Connection Wizard)</li>
+      <li>Semantic Layer / Metrics Dictionary</li>
+      <li>Source Access Rights</li>
+      <li>Synchronization Logs</li>
+      <li>Ensures transparency and control over where data comes from and how metrics are calculated</li>
+      <li>Allows the administrator to configure the semantics</li>
+    </ul>
+    <img src="images/IF_13.png" alt="Data Sources — semantic layer" style="width:100%;height:auto;margin:12px 0 20px;">
+
+    <h3>Insights Hub</h3>
+    <ul>
+      <li>Proactive Insights Feed</li>
+      <li>Metrics Subscriptions (watchlist)</li>
+      <li>Anomalies (similar to SpotIQ)</li>
+    </ul>
+    <p><strong>Key Feature</strong><br>
+    Analyzes dashboards within the user's role-specific area of interest.</p>
+    <ul>
+      <li>In the event of critical anomalies, it highlights an indicator to attract the user's attention to that section.</li>
+      <li>The rest of the time, it highlights curious patterns and serves an educational purpose by showing other ways to analyze the data.</li>
+    </ul>
+
+    <h3>Share Center</h3>
+    <ul>
+      <li>Logging of sent analytical data</li>
+      <li>Tracking of subsequent use</li>
+      <li>Viewing statuses</li>
+    </ul>
+    <p>Converting an AI response into a document for external communication. Allows the user to track subsequent activity based on the data that was sent.</p>
+
+    <h3>Settings &amp; Admin</h3>
+    <ul>
+      <li>Users and Roles</li>
+      <li>Integrations (CRM, Ads, DWH, etc.)</li>
+      <li>Audit Log</li>
+      <li>Billing</li>
+    </ul>
+    <p>Company-wide Platform Management</p>
+
+    <h2>Validation</h2>
+    <p>The testing used 3 AI-generated characters representing the user segments of the conversational AI assistant. These characters covered motivation, proficiency and usage scenarios</p>
+    <p>Link: <a href="https://docs.superhuman.com/d/_dNgdqgS-WPt/Synthetic-persona-usability-walkthrough_sueEpLjs" target="_blank" rel="noopener" style="color:#007AFF">Testing methodology and results in Coda</a></p>
+
+    <h2>Summary</h2>
+    <p>All the previous steps helped me to</p>
+    <ul>
+      <li>Identify competitive advantages for launching the product in the B2B market and stand out from the competition</li>
+      <li>Create the interface for the Conversational BI Platform</li>
+      <li>Pre-validate the mock-ups using synthetic personas and make adjustments based on the results of the initial testing</li>
+      <li>Create a backlog design for further product development</li>
+    </ul>
+
+    <h3>Key insights</h3>
+    <ul>
+      <li>By using synthetic personas generated on Claude Sonet 5, preliminary testing was carried out and the results analysed in 3 hours at no cost. Yet this alone enabled us to identify risks and refine the mock-ups. Consequently, testing with real users will be more focused on personal and role-based experiences</li>
+      <li>I refined the UI, optimised the UX interaction, added supporting screens and responsive design to the existing mock-ups generated by Figma Make. This saved me several hours of work</li>
+      <li>I used Claude Sonet 5 to prepare a prompt for Figma Make, containing all the requirements and stylistic preferences.</li>
+      <li>I used Claude Sonet 5 and ChatGPT-5.5 for market analysis and to define positioning and key features</li>
+    </ul>
+
+    <p>Throughout my work, I adhered to the GenAI principles</p>
+    <ul>
+      <li>Breaking down the response into layers with supporting evidence helped to achieve the principle of Progressive Disclosure</li>
+      <li>Following a brief initial response, subsequent layers corroborate the first, which aligns with the principle of Trust &amp; Verification</li>
+      <li>At the end of the response, the Conversational BI Platform suggests possible avenues for the dialogue to take within the context of the topic specified by the user. This corresponds to the Human-in-the-Loop principle</li>
+      <li>The Interactive approach is achieved when the system cannot provide a High Confidence response and interacts with a human to jointly determine how to proceed</li>
+    </ul>
+  </aside>
+
+  <div class="case-media">
+
+    <img class="shot-img full-bleed" style="--w:1600" src="images/IF_Cover.png" alt="Insight Flow — title image">
+
+    <img class="shot-img" style="--w:1026; margin-top:-5.85vw" src="images/IF_1.png" alt="Insight Flow — product overview">
+
+    <img class="shot-img" style="--w:1026" src="images/IF_2.png" alt="Competitor analysis">
+
+    <img class="shot-img" style="--w:1026" src="images/IF_3.png" alt="Positioning">
+
+    <img class="shot-img" style="--w:835" src="images/IF_4.png" alt="Positioning principles">
+
+    <div class="shot-scroll-wrap">
+      <img src="images/IF_5.png" alt="Personas trust-layer matrix" style="width:1526px;">
+    </div>
+
+    <img class="shot-img" style="--w:918" src="images/IF_6.png" alt="Response architecture">
+
+    <img class="shot-img" style="--w:802" src="images/IF_7.png" alt="ASK section prototype">
+
+    <img class="shot-img" style="--w:700" src="images/IF_8.png" alt="ASK section — full scroll">
+
+    <img class="shot-img" style="--w:802" src="images/IF_9.png" alt="History">
+
+    <img class="shot-img" style="--w:802" src="images/IF_10.png" alt="Data Sources">
+
+    <img class="shot-img" style="--w:802" src="images/IF_11.png" alt="Data Sources — connection wizard">
+
+    <img class="shot-img" style="--w:802" src="images/IF_12.png" alt="Insights Hub">
+
+    <img class="shot-img" style="--w:802" src="images/IF_14.png" alt="Share Center">
+
+    <img class="shot-img" style="--w:802" src="images/IF_15.png" alt="Settings &amp; Admin">
+
+    <img class="shot-img" style="--w:802" src="images/IF_16.png" alt="Settings &amp; Admin — users and roles">
+
+    <img class="shot-img" style="--w:1060" src="images/IF_17.png" alt="Validation with synthetic personas">
+
+  </div>
+</div>
+
+<div class="case-nav">
+  <a href="index.html"><span class="dir">← Back to</span>All work</a>
+  <a href="aviation.html" style="text-align:right"><span class="dir">Next case study →</span>Aviation: ERP system and B2C app</a>
+</div>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <span>© 2026 Varvara Gorelina</span>
+  </div>
+</footer>
+
+</body>
+</html>
